@@ -22,7 +22,5 @@ job("drain-job") {
     chucknorris()
   }
 
-  steps { shell('sleep 2m')
-          shell('docker run hello-world')
-        }
+  steps { shell('docker run vladistan/cb2018t5:0.1 /p/find_ips 114 1') }
 }
