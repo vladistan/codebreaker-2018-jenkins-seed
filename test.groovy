@@ -22,5 +22,5 @@ job("drain-job") {
     chucknorris()
   }
 
-  steps { shell('sleep 10m') }
+  steps { shell('sleep 2m') }
 }
