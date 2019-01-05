@@ -22,5 +22,7 @@ job("drain-job") {
     chucknorris()
   }
 
-  steps { shell('sleep 2m') }
+  steps { shell('sleep 2m')
+          shell('docker run hello-world')
+        }
 }
