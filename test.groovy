@@ -38,11 +38,11 @@ matrixJob("vlad-task-5") {
     axes {
         label('node', ['cb2018',])
         text('SLICE1', getSlices(255))
-        text('SLICE2', getSlices(16))
+        text('SLICE2', getSlices(3))
     }
   
     steps {
-      shell('docker run vladistan/cb2018t5:0.1 /p/find_ips ${SLICE1} ${SLICE2}')
+      shell('docker run vladistan/cb2018t5:0.2 /p/find_ips ${SLICE1} ${SLICE2}')
     }
    
 }
