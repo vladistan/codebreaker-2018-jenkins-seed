@@ -37,8 +37,8 @@ matrixJob("vlad-task-5") {
   
     axes {
         label('node', ['cb2018',])
-        text('SLICE1', getSlices(2))
-        text('SLICE2', getSlices(3))
+        text('SLICE1', getSlices(255))
+        text('SLICE2', getSlices(16))
     }
   
     steps {
